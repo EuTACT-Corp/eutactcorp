@@ -4,7 +4,7 @@ import { Button } from "@material-tailwind/react"
 
 const Home = () => {
     return (
-        <section className="flex md:flex-col gap-40 justify-center items-center h-screen bg-gradient-to-br from-primaryGradient to-secondaryGradient mt-10">
+        <section className="flex gap-40 justify-center items-center h-[100vh] bg-gradient-to-br from-primaryGradient to-secondaryGradient">
             <div>
                 <h1 className="text-4xl sm:text-3xl font-bold text-lightColor">Enabling Your Next Digital Leap!</h1>
                 <h1 className="text-4xl sm:text-2xl font-bold text-white mt-4 mb-[-24px]">Elevate Your Reach</h1>
