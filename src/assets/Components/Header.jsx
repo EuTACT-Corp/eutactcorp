@@ -3,12 +3,10 @@ import {
     Navbar,
     MobileNav,
     Typography,
-    Button,
     IconButton,
-    Card,
 } from "@material-tailwind/react";
 
-import eutactlogo from "../../assets/eutactlogo.png";
+import eutactlogo from "../Images/eutactlogo.png";
 
 const Header = () => {
 
@@ -27,7 +25,7 @@ const Header = () => {
                 as="li"
                 variant="h6"
                 color="white"
-                className="p-1 font-normal"
+                className=" p-1 font-normal"
             >
                 <a href="#" className="flex items-center">
                     Home
@@ -68,7 +66,7 @@ const Header = () => {
 
     return (
         <div className="max-h-[768px] w-full">
-            <Navbar className="sticky top-0 h-max max-w-full rounded-none px-8 py-4 lg:px-24 lg:py-7 border-none shadow-none drop-shadow-none  bg-primaryGradient bg-opacity-100">
+            <Navbar className="fixed top-0 h-max max-w-full rounded-none px-8 py-4 lg:px-24 lg:py-7 border-none shadow-none drop-shadow-none  bg-primaryGradient bg-opacity-100">
                 <div className="flex items-center justify-between text-white">
                     <a href=""><img src={eutactlogo} className="w-[30%] sm:w-[20%] md:w-[16%]" alt="" /></a>
                     <div className="flex items-center gap-4">

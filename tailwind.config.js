@@ -17,7 +17,7 @@ module.exports = withMT({
         secondary: "#ff5e57",
         greyColor: "#e4e3e3",
         darkColor: "#343a40",
-        veryDarkColor: "#212224",
+        lightColor: "#E1A4FF",
       },
     },
   },
