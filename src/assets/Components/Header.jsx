@@ -6,47 +6,51 @@ import {
 } from "@material-tailwind/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
+import EutactLogo from "../Images/eutactlogo.png"
+
+import { useEffect, useState } from "react";
+
 function NavList() {
     return (
-        <ul className="my-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
+        <ul className="my-2 flex flex-col justify-end items-end gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-20">
             <Typography
                 as="li"
                 variant="small"
-                color="blue-gray"
+                color="white"
                 className="p-1 font-medium"
             >
-                <a href="#" className="flex items-center hover:text-blue-500 transition-colors">
-                    Pages
+                <a href="#" className="flex items-center hover:text-txtDarkColor transition-colors">
+                    Home
                 </a>
             </Typography>
             <Typography
                 as="li"
                 variant="small"
-                color="blue-gray"
+                color="white"
                 className="p-1 font-medium"
             >
-                <a href="#" className="flex items-center hover:text-blue-500 transition-colors">
-                    Account
+                <a href="#" className="flex items-center hover:text-txtDarkColor transition-colors">
+                    About
                 </a>
             </Typography>
             <Typography
                 as="li"
                 variant="small"
-                color="blue-gray"
+                color="white"
                 className="p-1 font-medium"
             >
-                <a href="#" className="flex items-center hover:text-blue-500 transition-colors">
-                    Blocks
+                <a href="#" className="flex items-center hover:text-txtDarkColor transition-colors">
+                    Services
                 </a>
             </Typography>
             <Typography
                 as="li"
                 variant="small"
-                color="blue-gray"
+                color="white"
                 className="p-1 font-medium"
             >
-                <a href="#" className="flex items-center hover:text-blue-500 transition-colors">
-                    Docs
+                <a href="#" className="flex items-center hover:text-txtDarkColor transition-colors">
+                    Contact
                 </a>
             </Typography>
         </ul>
@@ -67,17 +71,32 @@ const Header = () => {
         };
     }, []);
 
+    // Handling navbar bg color on scroll
+    const [scrolled, setScrolled] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const isScrolled = window.scrollY > 0;
+            setScrolled(isScrolled);
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
+
+
     return (
-        <nav className="fixed mx-auto w-screen px-6 py-3">
+        <nav className={`fixed mx-auto w-screen px-8 sm:px-12 md:px-28 py-6 ${scrolled ? "bg-primaryGradient" : ""
+            }`}>
             <div className="flex items-center justify-between text-blue-gray-900">
-                <Typography
-                    as="a"
-                    href="#"
-                    variant="h6"
-                    className="mr-4 cursor-pointer py-1.5"
-                >
-                    Material Tailwind
-                </Typography>
+                <div>
+                    <a href="">
+                        <img src={EutactLogo} className="w-28" alt="" />
+                    </a>
+                </div>
+
                 <div className="hidden lg:block">
                     <NavList />
                 </div>
@@ -88,9 +107,9 @@ const Header = () => {
                     onClick={() => setOpenNav(!openNav)}
                 >
                     {openNav ? (
-                        <XMarkIcon className="h-6 w-6" strokeWidth={2} />
+                        <XMarkIcon className="h-6 w-6 text-white" strokeWidth={2} />
                     ) : (
-                        <Bars3Icon className="h-6 w-6" strokeWidth={2} />
+                        <Bars3Icon className="h-6 w-6 text-white" strokeWidth={2} />
                     )}
                 </IconButton>
             </div>
