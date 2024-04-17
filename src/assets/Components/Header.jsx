@@ -59,37 +59,34 @@ function NavList() {
 
 const Header = () => {
     const [openNav, setOpenNav] = React.useState(false);
+    const [navbarBackground, setNavbarBackground] = React.useState("");
 
     const handleWindowResize = () =>
         window.innerWidth >= 960 && setOpenNav(false);
 
     React.useEffect(() => {
         window.addEventListener("resize", handleWindowResize);
+        handleScroll(); // Call the handleScroll function on component mount
 
         return () => {
             window.removeEventListener("resize", handleWindowResize);
         };
     }, []);
 
-    // Handling navbar bg color on scroll
-    const [scrolled, setScrolled] = useState(false);
+    const handleScroll = () => {
+        const isScrolled = window.scrollY > 0;
+        setNavbarBackground(isScrolled ? "bg-primaryGradient" : ""); // Set navbar background to primaryGradient if scrolled, otherwise reset it
+    };
 
     useEffect(() => {
-        const handleScroll = () => {
-            const isScrolled = window.scrollY > 0;
-            setScrolled(isScrolled);
-        };
-
         window.addEventListener("scroll", handleScroll);
         return () => {
             window.removeEventListener("scroll", handleScroll);
         };
     }, []);
 
-
     return (
-        <nav className={`fixed mx-auto w-screen px-8 sm:px-12 md:px-28 py-6 ${scrolled ? "bg-primaryGradient" : ""
-            }`}>
+        <nav className={`fixed mx-auto w-screen px-8 sm:px-12 md:px-28 py-6 ${navbarBackground}`}>
             <div className="flex items-center justify-between text-blue-gray-900">
                 <div>
                     <a href="">
@@ -104,7 +101,10 @@ const Header = () => {
                     variant="text"
                     className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
                     ripple={false}
-                    onClick={() => setOpenNav(!openNav)}
+                    onClick={() => {
+                        setOpenNav(!openNav);
+                        setNavbarBackground(openNav ? "" : 'bg-primaryGradient');
+                    }}
                 >
                     {openNav ? (
                         <XMarkIcon className="h-6 w-6 text-white" strokeWidth={2} />
@@ -120,4 +120,4 @@ const Header = () => {
     );
 }
 
-export default Header; 
+export default Header;
