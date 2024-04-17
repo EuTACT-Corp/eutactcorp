@@ -13,11 +13,13 @@ module.exports = withMT({
         primaryGradient: "#0A0A36",
         secondaryGradient: "#252568",
 
-        primary: "#",
-        secondary: "#ff5e57",
-        greyColor: "#e4e3e3",
+        primary: "#181842",
+        secondary: "#281188",
+        greyColor: "#3F3D56",
         txtDarkColor: "#A61DEA",
         lightColor: "#E1A4FF",
+
+        darkPink: '#A61DEA',
       },
     },
   },
