@@ -1,6 +1,7 @@
 import Header from "./assets/Components/Header"
 import Home from "./assets/Components/Home"
 import About from "./assets/Components/About"
+import Services from "./assets/Components/Services"
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <Header />
       <Home />
       <About />
+      <Services />
     </div>
   );
 }
