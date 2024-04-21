@@ -7,9 +7,6 @@ const Services = () => {
                     <p className="text-white" >We excel in Engineering and Web Services. Our Engineering division ensures precision across disciplines. While our Web Services provide tailored solutions from design to digital marketing. Partner with us for integrated success in both realms.</p>
                 </div>
             </div>
-            <div>
-                <h1>Hello World</h1>
-            </div>
         </section>
     )
 }
