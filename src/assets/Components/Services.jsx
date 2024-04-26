@@ -20,7 +20,7 @@ const Services = () => {
                 </div>
 
                 {/* Service Cards */}
-                <div className="flex flex-col md:flex-row justify-center gap-4 md:gap-14">
+                <div className="flex flex-col md:flex-row justify-center gap-4 md:gap-14 m-4">
                     <div className="w-full md:w-1/4 m-3">
                         <div className="flex justify-start items-center">
                             <div className="w-10">
@@ -36,62 +36,62 @@ const Services = () => {
                     <div className="w-full md:w-1/4 m-3">
                         <div className="flex justify-start items-center">
                             <div className="w-10">
-                                <img className="w-full" src={ConsultSVG} alt="" />
+                                <img className="w-full" src={DesignSVG} alt="" />
                             </div>
-                            <h3 className="text-txtDarkColor text-xl font-medium p-3">Engineering Consulting</h3>
+                            <h3 className="text-txtDarkColor text-xl font-medium p-3">Design and Drafting</h3>
                         </div>
                         <div className="text-white">
-                            <p>We offer expert consulting in Civil, Architectural, Mechanical, and Piping engineering. From feasibility to implementation, we tailor strategic solutions.</p>
+                            <p>We utilize cutting-edge CAD/CAM for precise designs. Specializing in meeting industry standards and client specs for project success.</p>
                         </div>
                     </div>
 
                     <div className="w-full md:w-1/4 m-3">
                         <div className="flex justify-start items-center">
                             <div className="w-10">
-                                <img className="w-full" src={ConsultSVG} alt="" />
+                                <img className="w-full" src={ProjectSVG} alt="" />
                             </div>
-                            <h3 className="text-txtDarkColor text-xl font-medium p-3">Engineering Consulting</h3>
+                            <h3 className="text-txtDarkColor text-xl font-medium p-3">Project Management</h3>
                         </div>
                         <div className="text-white">
-                            <p>We offer expert consulting in Civil, Architectural, Mechanical, and Piping engineering. From feasibility to implementation, we tailor strategic solutions.</p>
+                            <p>We offer full project management, ensuring on-time, in-budget completion. Our managers employ proven methodologies for lifecycle oversight.</p>
                         </div>
                     </div>
                 </div>
 
-                <div className="flex flex-col md:flex-row justify-center gap-4 md:gap-14">
+                <div className="flex flex-col md:flex-row justify-center gap-4 md:gap-14 m-4">
                     <div className="w-full md:w-1/4 m-3">
                         <div className="flex justify-start items-center">
                             <div className="w-10">
-                                <img className="w-full" src={ConsultSVG} alt="" />
+                                <img className="w-full" src={OutSourceSVG} alt="" />
                             </div>
-                            <h3 className="text-txtDarkColor text-xl font-medium p-3">Engineering Consulting</h3>
+                            <h3 className="text-txtDarkColor text-xl font-medium p-3">Outsourcing Solutions</h3>
                         </div>
                         <div className="text-white">
-                            <p>We offer expert consulting in Civil, Architectural, Mechanical, and Piping engineering. From feasibility to implementation, we tailor strategic solutions.</p>
+                            <p>We provide outsourcing for flexible scaling. Our global talent handles complex tasks, allowing clients focus on core activities.</p>
                         </div>
                     </div>
 
                     <div className="w-full md:w-1/4 m-3">
                         <div className="flex justify-start items-center">
                             <div className="w-10">
-                                <img className="w-full" src={ConsultSVG} alt="" />
+                                <img className="w-full" src={SustSVG} alt="" />
                             </div>
-                            <h3 className="text-txtDarkColor text-xl font-medium p-3">Engineering Consulting</h3>
+                            <h3 className="text-txtDarkColor text-xl font-medium p-3">Sustainable Engineering Solutions:</h3>
                         </div>
                         <div className="text-white">
-                            <p>We offer expert consulting in Civil, Architectural, Mechanical, and Piping engineering. From feasibility to implementation, we tailor strategic solutions.</p>
+                            <p>Commited to sustainability, we integrate eco-friendly practices to minimize impact and maximize efficiency. Our approach includes energy efficiency, resource conservation, and green building practices.</p>
                         </div>
                     </div>
 
                     <div className="w-full md:w-1/4 m-3">
                         <div className="flex justify-start items-center">
                             <div className="w-10">
-                                <img className="w-full" src={ConsultSVG} alt="" />
+                                <img className="w-full" src={StrucSVG} alt="" />
                             </div>
-                            <h3 className="text-txtDarkColor text-xl font-medium p-3">Engineering Consulting</h3>
+                            <h3 className="text-txtDarkColor text-xl font-medium p-3">Structural Engineering</h3>
                         </div>
                         <div className="text-white">
-                            <p>We offer expert consulting in Civil, Architectural, Mechanical, and Piping engineering. From feasibility to implementation, we tailor strategic solutions.</p>
+                            <p>We analyze, design, evaluate diverse structures using advanced techniques. Ensuring safety, stability, durability, and cost-efficiency, we excel in tailored solutions for projects, surpassing expectations.</p>
                         </div>
                     </div>
                 </div>
