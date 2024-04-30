@@ -108,7 +108,7 @@ const Services = () => {
 
             <div>
                 <div class="container mx-auto px-4 py-12">
-                    <h1 class="text-4xl text-center font-bold text-white mb-12">Web Related Services</h1>
+                    <h1 class="text-4xl text-center font-bold text-white">Web Related Services</h1>
 
                     <div class="flex flex-col lg:flex-row items-center justify-center lg:px-4">
                         <div class="mb-8 lg:mb-0 lg:mr-12 lg:w-1/2">
