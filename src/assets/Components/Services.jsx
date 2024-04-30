@@ -100,6 +100,7 @@ const Services = () => {
                 </div>
             </div>
 
+            {/* Horizontal Break Line */}
             <div class="flex justify-center">
                 <div class="w-[80%]">
                     <hr class="w-full h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" />
