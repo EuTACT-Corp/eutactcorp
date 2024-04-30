@@ -2,6 +2,7 @@ import Header from "./assets/Components/Header"
 import Home from "./assets/Components/Home"
 import About from "./assets/Components/About"
 import Services from "./assets/Components/Services"
+import Promises from "./assets/Components/Promises"
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Home />
       <About />
       <Services />
+      <Promises />
     </div>
   );
 }
