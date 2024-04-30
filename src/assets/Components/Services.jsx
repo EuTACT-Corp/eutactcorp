@@ -4,6 +4,9 @@ import ProjectSVG from "../Images/3_project.svg";
 import OutSourceSVG from "../Images/4_outsource.svg";
 import SustSVG from "../Images/5_sustainable.svg";
 import StrucSVG from "../Images/6_structural.svg";
+import DigitalSVG from "../Images/1_web_service.svg"
+import IdeaSVG from "../Images/2_web_service.svg"
+import FootprintSVG from "../Images/3_web_service.svg"
 
 const Services = () => {
     return (
@@ -100,6 +103,42 @@ const Services = () => {
             <div class="flex justify-center">
                 <div class="w-[80%]">
                     <hr class="w-full h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" />
+                </div>
+            </div>
+
+            <div>
+                <div class="container mx-auto px-4 py-12">
+                    <h1 class="text-4xl text-center font-bold text-white mb-12">Web Related Services</h1>
+
+                    <div class="flex flex-col lg:flex-row items-center justify-center lg:px-4">
+                        <div class="mb-8 lg:mb-0 lg:mr-12 lg:w-1/2">
+                            <img src={DigitalSVG} alt="Digital Transformation" class="mx-auto lg:mx-0 w-full" />
+                        </div>
+                        <div class="text-white text-center lg:text-left lg:w-1/2">
+                            <h2 class="text-3xl font-medium mb-4">Digital Transformation for Your Business</h2>
+                            <p class="mb-4">Embracing the digital world is a new mandate to achieve business goals. Providing support to build a digital twin of your dream business is our passion. We focus on core values that add up to your channel of revenue. Starting with branding and logo design, we also set up your social media to voice out your brand in the competitive digital world.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col lg:flex-row-reverse items-center justify-center lg:px-4 mt-12">
+                        <div class="mb-8 lg:mb-0 lg:ml-12 lg:w-1/2">
+                            <img src={IdeaSVG} alt="Idea to product Reality" class="mx-auto lg:mx-0 w-full" />
+                        </div>
+                        <div class="text-white text-center lg:text-left lg:w-1/2">
+                            <h2 class="text-3xl font-medium mb-4">Your Idea to Product a Reality and Beyond</h2>
+                            <p class="mb-4">Making your ideas a reality with an omnipresent digital product is what we do at EuTact. We collaborate with hand-picked designers and developers on board to assure the best craftsmanship for your dream startup. We help you refine your idea and benchmark against your competitors.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col lg:flex-row items-center justify-center lg:px-4 mt-12">
+                        <div class="mb-8 lg:mb-0 lg:mr-12 lg:w-1/2">
+                            <img src={FootprintSVG} alt="Digital Transformation" class="mx-auto lg:mx-0 w-full" />
+                        </div>
+                        <div class="text-white text-center lg:text-left lg:w-1/2">
+                            <h2 class="text-3xl font-medium mb-4">A Fresh Look for Your Existing Digital Footprint</h2>
+                            <p class="mb-4">We also take ownership to uplift existing websites and make them user-friendly. We have experts who add finesse touches and work wonders to fulfill your requirements. Additionally, we provide end-to-end maintenance to promise uninterrupted service to your customers.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
 
