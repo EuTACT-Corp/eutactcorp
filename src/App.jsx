@@ -4,6 +4,7 @@ import About from "./assets/Components/About"
 import Services from "./assets/Components/Services"
 import Promises from "./assets/Components/Promises"
 import Purpose from "./assets/Components/Purpose"
+import Contact from "./assets/Components/Contact"
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Services />
       <Promises />
       <Purpose />
+      <Contact />
     </div>
   );
 }
