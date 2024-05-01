@@ -9,16 +9,16 @@ const Footer = () => {
     return (
         <footer className="bg-gradient-to-br from-primaryGradient to-secondaryGradient py-8 px-6 md:px-16 flex flex-col gap-8">
             <div className="flex flex-col md:flex-row justify-between items-start gap-8">
-                <div className="text-left md:w-1/4 flex flex-col gap-4">
+                <div className="text-center w-full md:text-left md:w-1/4 flex flex-col gap-4">
                     <div>
-                        <a href="#" className="text-white">
+                        <a href="#" className="text-white flex justify-center items-center md:items-start md:justify-start">
                             <img src={EutactLogo} className="w-24 md:w-[60%]" alt="Eutact Logo" />
                         </a>
                     </div>
                     <p className="text-white">contact@eutact.com</p>
                     <p className="text-white">+1 587 372 7070</p>
                 </div>
-                <div className="flex flex-col justify-center items-center w-64">
+                <div className="flex flex-col justify-center items-center w-64 mx-auto md:mx-0">
                     <h1 className="text-white text-3xl font-semibold">Follow Us!</h1>
                     <ul className="flex gap-5 p-4">
                         <li>
@@ -43,9 +43,9 @@ const Footer = () => {
                         </li>
                     </ul>
                 </div>
-                <div className="text-right md:w-1/4">
+                <div className="text-right md:w-1/4 mx-auto md:mx-0">
                     <h1 className="text-white text-3xl font-semibold pb-3">Our Offices</h1>
-                    <div className="flex justify-end items-end flex-col gap-2">
+                    <div className="flex justify-center items-center md:justify-end md:items-end flex-col gap-2">
                         <a href="#services" className="text-white">
                             <div className="flex justify-center items-center gap-1">
                                 <IoLocationSharp /> Edmonton
@@ -71,7 +71,7 @@ const Footer = () => {
                 </div>
             </div>
 
-            <div className="flex flex-col md:flex-row justify-between items-center">
+            <div className="flex flex-col md:flex-row justify-between items-center gap-10 md:gap-0">
                 <div className="flex gap-5">
                     <a href="#" target="_blank" className="text-white underline">Terms & Conditions</a>
                     <a href="#" target="_blank" className="text-white underline">Privacy & Policy</a>
