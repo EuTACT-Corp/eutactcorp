@@ -73,8 +73,8 @@ const Footer = () => {
 
             <div className="flex flex-col md:flex-row justify-between items-center">
                 <div className="flex gap-5">
-                    <a href="/pages/terms&conditions.html" target="_blank" className="text-white underline">Terms & Conditions</a>
-                    <a href="/pages/privacy&policy.html" target="_blank" className="text-white underline">Privacy & Policy</a>
+                    <a href="#" target="_blank" className="text-white underline">Terms & Conditions</a>
+                    <a href="#" target="_blank" className="text-white underline">Privacy & Policy</a>
                 </div>
                 <div className="text-white">
                     <p>Copyright 2024 | All Rights Reserved</p>
