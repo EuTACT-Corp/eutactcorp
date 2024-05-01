@@ -86,7 +86,7 @@ const Header = () => {
     }, []);
 
     return (
-        <nav className={`fixed mx-auto w-screen px-8 sm:px-12 md:px-28 py-6 ${navbarBackground}`}>
+        <nav className={`z-50 fixed mx-auto w-screen px-8 sm:px-12 md:px-28 py-6 ${navbarBackground}`}>
             <div className="flex items-center justify-between text-blue-gray-900">
                 <div>
                     <a href="">
