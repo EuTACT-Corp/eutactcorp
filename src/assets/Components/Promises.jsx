@@ -165,6 +165,17 @@ const Promises = () => {
                 </div>
             </div>
 
+            <div className="w-full flex justify-center items-center text-center py-10">
+                <div className="w-full md:w-[60%] max-w-screen-lg mx-auto">
+                    <p className="text-primaryGradient text-lg">
+                        At EuTACT, we are dedicated to delivering excellence in engineering consulting, outsourcing,
+                        and project management. Our focus on ownership, integrity, and authenticity sets us apart,
+                        ensuring that our clients receive the highest quality of service and the best value for their
+                        investment.
+                    </p>
+                </div>
+            </div>
+
 
         </section>
 
