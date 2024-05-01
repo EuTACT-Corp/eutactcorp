@@ -4,7 +4,7 @@ const Contact = () => {
     return (
         <section id="Contact" className="pb-16">
             <div className="container mx-auto py-10">
-                <h2 className="text-primary text-center text-3xl py-8 font-bold">Get in Touch</h2>
+                <h2 className="text-primary text-center text-4xl py-8 font-bold">Get in Touch</h2>
                 <div className="md:flex justify-between items-center">
                     <div className="w-full md:w-1/2 h-[300px] sm:h-[450px]">
                         <iframe

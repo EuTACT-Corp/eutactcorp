@@ -5,6 +5,7 @@ import Services from "./assets/Components/Services"
 import Promises from "./assets/Components/Promises"
 import Purpose from "./assets/Components/Purpose"
 import Contact from "./assets/Components/Contact"
+import Footer from "./assets/Components/Footer"
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Promises />
       <Purpose />
       <Contact />
+      <Footer />
     </div>
   );
 }
