@@ -176,7 +176,6 @@ const Promises = () => {
                 </div>
             </div>
 
-
         </section>
 
     );

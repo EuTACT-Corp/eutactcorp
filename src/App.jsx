@@ -3,6 +3,7 @@ import Home from "./assets/Components/Home"
 import About from "./assets/Components/About"
 import Services from "./assets/Components/Services"
 import Promises from "./assets/Components/Promises"
+import Purpose from "./assets/Components/Purpose"
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <About />
       <Services />
       <Promises />
+      <Purpose />
     </div>
   );
 }
