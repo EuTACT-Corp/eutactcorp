@@ -6,6 +6,10 @@ import PromiseONE from "../Images/1_promise_img.svg";
 import PromiseTWO from "../Images/2_promise_img.svg";
 import PromiseTHREE from "../Images/3_promise_img.svg";
 
+import OwnershipSVG from "../Images/ownership.svg";
+import IntegritySVG from "../Images/integrity.svg";
+import AuthenticitySVG from "../Images/authenticity.svg";
+
 import { FaArrowCircleLeft } from "react-icons/fa";
 import { FaArrowCircleRight } from "react-icons/fa";
 
@@ -118,7 +122,52 @@ const Promises = () => {
                     </Carousel>
                 </div>
             </div>
+
+            <div class="flex justify-center">
+                <div class="w-[80%]">
+                    <hr class="w-full h-[1.5px] my-8 bg-primaryGradient border-0 dark:bg-gray-700" />
+                </div>
+            </div>
+
+            {/* Commitment to ownership and integrity section */}
+            <div className="container mx-auto p-5">
+                <div>
+                    <h1 className="text-3xl font-bold py-12 text-txtDarkColor text-center">Commitment to Ownership, Integrity, and Authenticity</h1>
+                </div>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-2 md:px-5 lg:px-20">
+                    <div className="bg-cardColor hover:shadow-secondaryGradient shadow-sm flex-shrink-0 text-center p-12 rounded-lg">
+                        <div className="flex justify-center items-center">
+                            <img src={OwnershipSVG} alt="ownership_svg" />
+                        </div>
+                        <div className="px-4 py-6">
+                            <h2 className="text-lg font-bold">Ownership</h2>
+                            <p className="text-sm">We take ownership of our work and its outcomes, ensuring that every project is managed with dedication and accountability from start to finish.</p>
+                        </div>
+                    </div>
+                    <div className="bg-cardColor hover:shadow-secondaryGradient shadow-sm flex-shrink-0 text-center p-12 rounded-lg">
+                        <div className="flex justify-center items-center">
+                            <img src={IntegritySVG} alt="integrity_svg" />
+                        </div>
+                        <div className="px-4 py-6">
+                            <h2 className="text-lg font-bold">Integrity</h2>
+                            <p className="text-sm">Our commitment to integrity is unwavering. We conduct our business with honesty, transparency, and ethical practices, earning our clients' and partners' trust and respect.</p>
+                        </div>
+                    </div>
+                    <div className="bg-cardColor hover:shadow-secondaryGradient shadow-sm flex-shrink-0 text-center p-12 rounded-lg">
+                        <div className="flex justify-center items-center">
+                            <img src={AuthenticitySVG} alt="authenticity_svg" />
+                        </div>
+                        <div className="px-4 py-6">
+                            <h2 className="text-lg font-bold">Authenticity</h2>
+                            <p className="text-sm">We believe in being authentic in all our interactions, providing genuine solutions that address each client's unique needs and challenges, and fostering long-term partnerships built on trust and mutual respect.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
         </section>
+
     );
 };
 

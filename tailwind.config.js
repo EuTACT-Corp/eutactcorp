@@ -20,6 +20,8 @@ module.exports = withMT({
         lightColor: "#E1A4FF",
 
         darkPink: '#A61DEA',
+
+        cardColor: '#F7F7FF',
       },
     },
   },
