@@ -19,7 +19,7 @@ function NavList() {
                 color="white"
                 className="p-1 font-medium"
             >
-                <a href="#" className="flex items-center hover:text-txtDarkColor transition-colors">
+                <a href="#Home" className="flex items-center hover:text-txtDarkColor transition-colors">
                     Home
                 </a>
             </Typography>
@@ -29,7 +29,7 @@ function NavList() {
                 color="white"
                 className="p-1 font-medium"
             >
-                <a href="#" className="flex items-center hover:text-txtDarkColor transition-colors">
+                <a href="#About" className="flex items-center hover:text-txtDarkColor transition-colors">
                     About
                 </a>
             </Typography>
@@ -39,7 +39,7 @@ function NavList() {
                 color="white"
                 className="p-1 font-medium"
             >
-                <a href="#" className="flex items-center hover:text-txtDarkColor transition-colors">
+                <a href="#Services" className="flex items-center hover:text-txtDarkColor transition-colors">
                     Services
                 </a>
             </Typography>
@@ -49,7 +49,7 @@ function NavList() {
                 color="white"
                 className="p-1 font-medium"
             >
-                <a href="#" className="flex items-center hover:text-txtDarkColor transition-colors">
+                <a href="#Contact" className="flex items-center hover:text-txtDarkColor transition-colors">
                     Contact
                 </a>
             </Typography>

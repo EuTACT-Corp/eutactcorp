@@ -5,6 +5,7 @@
 
 html {
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 /**************Custom Scroll bar**************/
@@ -28,4 +29,13 @@ html {
     padding-left: 20px;
     padding-right: 20px;
     margin: auto;
+}
+
+#Services,
+#Contact {
+    padding-top: 80px;
+}
+
+#About {
+    padding-top: 30px;
 }
