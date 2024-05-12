@@ -80,7 +80,7 @@ const Promises = () => {
                             <div className="ml-6 hidden md:block">
                                 <img
                                     src={PromiseONE}
-                                    alt="Promise 1"
+                                    alt="promise-img-1"
                                     className="object-cover rounded-xl p-5"
                                     style={{ maxWidth: '400px', maxHeight: '300px' }} // Adjust dimensions as needed
                                 />
@@ -97,7 +97,7 @@ const Promises = () => {
                             <div className="ml-6 hidden md:block ">
                                 <img
                                     src={PromiseTWO}
-                                    alt="Promise 2"
+                                    alt="promise-img-2"
                                     className="object-cover rounded-xl p-5"
                                     style={{ maxWidth: '400px', maxHeight: '300px' }} // Adjust dimensions as needed
                                 />
@@ -113,7 +113,7 @@ const Promises = () => {
                             <div className="ml-6 hidden md:block ">
                                 <img
                                     src={PromiseTHREE}
-                                    alt="Promise 3"
+                                    alt="promise-img-3"
                                     className="object-cover rounded-xl p-5"
                                     style={{ maxWidth: '400px', maxHeight: '300px' }} // Adjust dimensions as needed
                                 />

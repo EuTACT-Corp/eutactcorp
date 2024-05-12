@@ -27,7 +27,7 @@ const Services = () => {
                     <div className="w-full md:w-1/4 m-3">
                         <div className="flex justify-start items-center">
                             <div className="w-10">
-                                <img className="w-full" src={ConsultSVG} alt="" />
+                                <img className="w-full" src={ConsultSVG} alt="service-img-1" />
                             </div>
                             <h3 className="text-txtDarkColor text-xl font-medium p-3">Engineering Consulting</h3>
                         </div>
@@ -39,7 +39,7 @@ const Services = () => {
                     <div className="w-full md:w-1/4 m-3">
                         <div className="flex justify-start items-center">
                             <div className="w-10">
-                                <img className="w-full" src={DesignSVG} alt="" />
+                                <img className="w-full" src={DesignSVG} alt="service-img-2" />
                             </div>
                             <h3 className="text-txtDarkColor text-xl font-medium p-3">Design and Drafting</h3>
                         </div>
@@ -51,7 +51,7 @@ const Services = () => {
                     <div className="w-full md:w-1/4 m-3">
                         <div className="flex justify-start items-center">
                             <div className="w-10">
-                                <img className="w-full" src={ProjectSVG} alt="" />
+                                <img className="w-full" src={ProjectSVG} alt="service-img-3" />
                             </div>
                             <h3 className="text-txtDarkColor text-xl font-medium p-3">Project Management</h3>
                         </div>
@@ -65,7 +65,7 @@ const Services = () => {
                     <div className="w-full md:w-1/4 m-3">
                         <div className="flex justify-start items-center">
                             <div className="w-10">
-                                <img className="w-full" src={OutSourceSVG} alt="" />
+                                <img className="w-full" src={OutSourceSVG} alt="service-img-4" />
                             </div>
                             <h3 className="text-txtDarkColor text-xl font-medium p-3">Outsourcing Solutions</h3>
                         </div>
@@ -77,7 +77,7 @@ const Services = () => {
                     <div className="w-full md:w-1/4 m-3">
                         <div className="flex justify-start items-center">
                             <div className="w-10">
-                                <img className="w-full" src={SustSVG} alt="" />
+                                <img className="w-full" src={SustSVG} alt="service-img-5" />
                             </div>
                             <h3 className="text-txtDarkColor text-xl font-medium p-3">Sustainable Engineering Solutions:</h3>
                         </div>
@@ -89,7 +89,7 @@ const Services = () => {
                     <div className="w-full md:w-1/4 m-3">
                         <div className="flex justify-start items-center">
                             <div className="w-10">
-                                <img className="w-full" src={StrucSVG} alt="" />
+                                <img className="w-full" src={StrucSVG} alt="service-img-6" />
                             </div>
                             <h3 className="text-txtDarkColor text-xl font-medium p-3">Structural Engineering</h3>
                         </div>

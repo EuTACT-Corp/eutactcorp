@@ -17,7 +17,7 @@ const Home = () => {
                     </div>
                 </div>
                 <div>
-                    <img src={HomeImg} alt="" className="w-56 sm:w-60 lg:w-[32rem] mt-6 sm:mt-0" />
+                    <img src={HomeImg} alt="home-image" className="w-56 sm:w-60 lg:w-[32rem] mt-6 sm:mt-0" />
                 </div>
             </div>
         </section>
