@@ -1,6 +1,14 @@
-
+import React from 'react';
+import { useForm, ValidationError } from '@formspree/react';
 
 const Contact = () => {
+
+    const [state, handleSubmit] = useForm("xnnaawyq");
+
+    if (state.succeeded) {
+        alert("Form Submitted Successfully!!");
+    }
+
     return (
         <section id="Contact" className="pb-16">
             <div className="container mx-auto py-10">
@@ -16,7 +24,7 @@ const Contact = () => {
                     </div>
 
                     <div className="w-full mt-8 md:mt-0 md:w-1/2 sm:h-[450px] lg:flex items-center bg-primaryGradient px-4 lg:px-8 py-8 overflow-y-auto rounded-lg md:rounded-none">
-                        <form className="w-full">
+                        <form className="w-full" onSubmit={handleSubmit}>
                             <div className="mb-5">
                                 <input
                                     id="name"
@@ -55,7 +63,7 @@ const Contact = () => {
                                     required />
                             </div>
 
-                            <button type="submit" className="w-full p-3 focus:outline-none rounded-md bg-txtDarkColor text-white hover:bg-veryDarkColor text-center ease-linear duration-150">
+                            <button type="submit" disabled={state.submitting} className="w-full p-3 focus:outline-none rounded-md bg-txtDarkColor text-white hover:bg-veryDarkColor text-center ease-linear duration-150">
                                 Send Message
                             </button>
                         </form>
