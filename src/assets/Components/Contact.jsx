@@ -1,13 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useForm, ValidationError } from '@formspree/react';
 
 const Contact = () => {
-
     const [state, handleSubmit] = useForm("xnnaawyq");
-
-    if (state.succeeded) {
-        alert("Form Submitted Successfully!!");
-    }
 
     return (
         <section id="Contact" className="pb-16">
@@ -24,55 +19,61 @@ const Contact = () => {
                     </div>
 
                     <div className="w-full mt-8 md:mt-0 md:w-1/2 sm:h-[450px] lg:flex items-center bg-primaryGradient px-4 lg:px-8 py-8 overflow-y-auto rounded-lg md:rounded-none">
-                        <form className="w-full" onSubmit={handleSubmit}>
-                            <div className="mb-5">
-                                <input
-                                    id="name"
-                                    type="text"
-                                    name="name"
-                                    placeholder="Enter your name"
-                                    className="w-full p-3 focus:outline-none rounded-md"
-                                    required />
+                        {state.succeeded ? (
+                            <div className="w-full text-white">
+                                <h3 className="text-2xl mb-4">Thank you!</h3>
+                                <p>Your message has been successfully sent. We will contact you soon.</p>
                             </div>
-                            <div className="mb-5">
-                                <input
-                                    id="email"
-                                    type="email"
-                                    name="email"
-                                    placeholder="Enter your email"
-                                    className="w-full p-3 focus:outline-none rounded-md" required
-                                />
-                            </div>
-                            <div className="mb-5">
-                                <input
-                                    id="subject"
-                                    type="text"
-                                    name="subject"
-                                    placeholder="Subject"
-                                    className="w-full p-3 focus:outline-none rounded-md"
-                                    required />
-                            </div>
-                            <div className="mb-5">
-                                <textarea
-                                    id="message"
-                                    name="message"
-                                    type="text"
-                                    rows={3}
-                                    placeholder="Write your message"
-                                    className="w-full p-3 focus:outline-none rounded-md"
-                                    required />
-                            </div>
+                        ) : (
+                            <form className="w-full" onSubmit={handleSubmit}>
+                                <div className="mb-5">
+                                    <input
+                                        id="name"
+                                        type="text"
+                                        name="name"
+                                        placeholder="Enter your name"
+                                        className="w-full p-3 focus:outline-none rounded-md"
+                                        required />
+                                </div>
+                                <div className="mb-5">
+                                    <input
+                                        id="email"
+                                        type="email"
+                                        name="email"
+                                        placeholder="Enter your email"
+                                        className="w-full p-3 focus:outline-none rounded-md" required
+                                    />
+                                </div>
+                                <div className="mb-5">
+                                    <input
+                                        id="subject"
+                                        type="text"
+                                        name="subject"
+                                        placeholder="Subject"
+                                        className="w-full p-3 focus:outline-none rounded-md"
+                                        required />
+                                </div>
+                                <div className="mb-5">
+                                    <textarea
+                                        id="message"
+                                        name="message"
+                                        type="text"
+                                        rows={3}
+                                        placeholder="Write your message"
+                                        className="w-full p-3 focus:outline-none rounded-md"
+                                        required />
+                                </div>
 
-                            <button type="submit" disabled={state.submitting} className="w-full p-3 focus:outline-none rounded-md bg-txtDarkColor text-white hover:bg-veryDarkColor text-center ease-linear duration-150">
-                                Send Message
-                            </button>
-                        </form>
+                                <button type="submit" disabled={state.submitting} className="w-full p-3 focus:outline-none rounded-md bg-txtDarkColor text-white hover:bg-veryDarkColor text-center ease-linear duration-150">
+                                    Send Message
+                                </button>
+                            </form>
+                        )}
                     </div>
                 </div>
             </div>
         </section>
-
-    )
+    );
 }
 
-export default Contact; 
+export default Contact;
