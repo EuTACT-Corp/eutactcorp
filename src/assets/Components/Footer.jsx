@@ -51,7 +51,7 @@ const Footer = () => {
                                 <IoLocationSharp /> Edmonton
                             </div>
                         </a>
-                        <a href="#services" className="text-white">
+                        {/* <a href="#services" className="text-white">
                             <div className="flex justify-center items-center gap-1">
                                 <IoLocationSharp /> Boston
                             </div>
@@ -60,7 +60,7 @@ const Footer = () => {
                             <div className="flex justify-center items-center gap-1">
                                 <IoLocationSharp /> Chennai
                             </div>
-                        </a>
+                        </a> */}
                     </div>
                 </div>
             </div>
