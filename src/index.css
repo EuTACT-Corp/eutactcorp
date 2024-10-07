@@ -108,8 +108,23 @@ html {
 
 }
 
-/* Contact styling */
-.calendly-inline-widget{
-    min-width:562px;
-    height:350px;
+
+@media (max-width: 400px) {
+    .img-home-left {
+        height: 30rem; 
+        top: -40vh; 
+        left: -50vw; 
+    }
+    
+    .img-home-right{
+        height: 10rem; 
+        top: 79vh; 
+        right: 28vw;
+    }
+
+    #home-img{
+        padding-bottom: 10px;
+        width: 100px;
+    }
+
 }
