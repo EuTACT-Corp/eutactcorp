@@ -4,10 +4,12 @@ import FacebookPNG from "../Images/Facebook.png"
 import YoutubePNG from "../Images/Youtube.png"
 import EutactLogo from "../Images/eutactlogo.png"
 import { IoLocationSharp } from "react-icons/io5";
+import TransitionComponent from "../Animations/TransitionUp"
 
 const Footer = () => {
     return (
         <footer className="bg-gradient-to-br from-primaryGradient to-secondaryGradient py-8 px-6 md:px-16 flex flex-col gap-8">
+            <TransitionComponent>
             <div className="flex flex-col md:flex-row justify-between items-start gap-8">
                 <div className="text-center w-full md:text-left md:w-1/4 flex flex-col gap-4">
                     <div>
@@ -80,6 +82,7 @@ const Footer = () => {
                     <p>Copyright 2024 | All Rights Reserved</p>
                 </div>
             </div>
+            </TransitionComponent>
         </footer>
     )
 }

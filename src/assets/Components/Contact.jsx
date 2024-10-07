@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { useForm, ValidationError } from '@formspree/react';
+import TransitionComponent from '../Animations/TransitionUp';
+import TransitionRight from '../Animations/TransitionRight';
 
 const Contact = () => {
     const [state, handleSubmit] = useForm("xnnaawyq");
@@ -7,7 +9,10 @@ const Contact = () => {
     return (
         <section id="Contact" className="pb-16">
             <div className="container mx-auto py-10">
+                <TransitionComponent>
                 <h2 className="text-primary text-center text-4xl py-8 font-bold">Get in Touch</h2>
+                </TransitionComponent>
+                <TransitionRight>
                 <div className="md:flex justify-between items-center px-2">
                     <div className="w-full md:w-1/2 h-[300px] sm:h-[450px]">
                         <iframe
@@ -71,6 +76,7 @@ const Contact = () => {
                         )}
                     </div>
                 </div>
+                </TransitionRight>
             </div>
         </section>
     );

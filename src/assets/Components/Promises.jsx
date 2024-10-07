@@ -10,16 +10,25 @@ import OwnershipSVG from "../Images/ownership.svg";
 import IntegritySVG from "../Images/integrity.svg";
 import AuthenticitySVG from "../Images/authenticity.svg";
 
+import { IoArrowBackCircle } from "react-icons/io5";
+
 import { FaArrowCircleLeft } from "react-icons/fa";
 import { FaArrowCircleRight } from "react-icons/fa";
+
+import TransitionComponent from "../Animations/TransitionUp";
+import { fadeIn } from "../Animations/FadeIn";
+import { motion } from "framer-motion";
 
 
 const Promises = () => {
     return (
-        <section id="Promises" className="py-12">
-            <div className="container mx-auto">
-                <h1 className="text-4xl font-bold text-center mb-8">Our Promises</h1>
-                <div className="relative">
+        <section id="Promises" className="py-12 bg-primaryGradient">
+            <div className="container mx-auto ">
+                <TransitionComponent>
+                    <h1 className="text-4xl font-bold text-txtDarkColor text-center mb-8">Our Promises</h1>
+                </TransitionComponent>
+                <TransitionComponent>
+                <div className="relative bg-white rounded-xl">
                     <Carousel
                         showStatus={false}
                         showThumbs={false}
@@ -121,6 +130,8 @@ const Promises = () => {
                         </div>
                     </Carousel>
                 </div>
+                </TransitionComponent>
+
             </div>
 
             <div class="flex justify-center">
@@ -130,12 +141,21 @@ const Promises = () => {
             </div>
 
             {/* Commitment to ownership and integrity section */}
-            <div className="container mx-auto p-5">
+            <div className=" container mx-auto p-5">
                 <div>
+                <TransitionComponent>
                     <h1 className="text-3xl font-bold py-12 text-txtDarkColor text-center">Commitment to Ownership, Integrity, and Authenticity</h1>
+                    </TransitionComponent>
+
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-2 md:px-5 lg:px-20">
-                    <div className="bg-cardColor hover:shadow-secondaryGradient shadow-sm flex-shrink-0 text-center p-5 md:p-12 rounded-lg">
+                    <motion.div 
+                    variants={fadeIn('right', 0.2)}
+                    initial='hidden'
+                    whileInView={'show'}
+                    whileHover={{scale:1.05, boxShadow: "0px 0px 25px rgb(166, 29, 234)"}}
+                    viewport={{once: false, amount: 0.05}}
+                    className="bg-cardColor flex-shrink-0 text-center p-5 md:p-12 rounded-lg">
                         <div className="flex justify-center items-center">
                             <img src={OwnershipSVG} alt="ownership_svg" />
                         </div>
@@ -143,8 +163,16 @@ const Promises = () => {
                             <h2 className="text-lg font-bold">Ownership</h2>
                             <p className="text-sm md:text-center text-justify py-3">We take ownership of our work and its outcomes, ensuring that every project is managed with dedication and accountability from start to finish.</p>
                         </div>
-                    </div>
-                    <div className="bg-cardColor hover:shadow-secondaryGradient shadow-sm flex-shrink-0 text-center p-5 md:p-12 rounded-lg">
+                    </motion.div>
+                    
+                    <motion.div 
+                    variants={fadeIn('right', 0.4)}
+                    initial='hidden'
+                    whileInView={'show'}
+                    whileHover={{scale:1.05, boxShadow: "0px 0px 25px rgb(166, 29, 234)"}}
+                    viewport={{once: false, amount: 0.05}}
+                    className="bg-cardColor flex-shrink-0 text-center p-5 md:p-12 rounded-lg">
+                        
                         <div className="flex justify-center items-center">
                             <img src={IntegritySVG} alt="integrity_svg" />
                         </div>
@@ -152,8 +180,15 @@ const Promises = () => {
                             <h2 className="text-lg font-bold">Integrity</h2>
                             <p className="text-sm md:text-center text-justify py-3">Our commitment to integrity is unwavering. We conduct our business with honesty, transparency, and ethical practices, earning our clients' and partners' trust and respect.</p>
                         </div>
-                    </div>
-                    <div className="bg-cardColor hover:shadow-secondaryGradient shadow-sm flex-shrink-0 text-center p-5 md:p-12 rounded-lg">
+                    </motion.div>
+                    
+                    <motion.div 
+                    variants={fadeIn('right', 0.6)}
+                    initial='hidden'
+                    whileInView={'show'}
+                    whileHover={{scale:1.05, boxShadow: "0px 0px 25px rgb(166, 29, 234)"}}
+                    viewport={{once: false, amount: 0.05}}
+                    className="bg-cardColor flex-shrink-0 text-center p-5 md:p-12 rounded-lg">
                         <div className="flex justify-center items-center">
                             <img src={AuthenticitySVG} alt="authenticity_svg" />
                         </div>
@@ -161,18 +196,20 @@ const Promises = () => {
                             <h2 className="text-lg font-bold">Authenticity</h2>
                             <p className="text-sm md:text-center text-justify py-3">We believe in being authentic in all our interactions, providing genuine solutions that address each client's unique needs and challenges, and fostering long-term partnerships built on trust and mutual respect.</p>
                         </div>
-                    </div>
+                    </motion.div>
                 </div>
             </div>
 
             <div className="w-full flex justify-center items-center text-center py-10">
                 <div className="w-full md:w-[60%] max-w-screen-lg mx-auto">
-                    <p className="text-primaryGradient text-lg px-6 md:px-0 text-justify md:text-center">
+                    <TransitionComponent>
+                    <p className="text-white text-lg px-6 md:px-0 text-justify md:text-center">
                         At EuTACT, we are dedicated to delivering excellence in engineering consulting, outsourcing,
                         and project management. Our focus on ownership, integrity, and authenticity sets us apart,
                         ensuring that our clients receive the highest quality of service and the best value for their
                         investment.
                     </p>
+                    </TransitionComponent>
                 </div>
             </div>
 

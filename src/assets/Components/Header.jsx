@@ -9,47 +9,49 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import EutactLogo from "../Images/eutactlogo.png"
 
 import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
+
 
 function NavList() {
     return (
-        <ul className="my-2 flex flex-col justify-end items-end gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-20">
+        <ul id="list-nav" className="my-2 flex flex-col justify-end items-end gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-20">
             <Typography
                 as="li"
-                variant="small"
+                variant="medium"
                 color="white"
                 className="p-1 font-medium"
             >
-                <a href="#Home" className="flex items-center hover:text-txtDarkColor transition-colors">
+                <a href="#Home" className="flex items-center hover:text-txtDarkColor transition ease-in-out delay-100 hover:-translate-y-0.1 hover:scale-125 duration-300 ...">
                     Home
                 </a>
             </Typography>
             <Typography
                 as="li"
-                variant="small"
+                variant="medium"
                 color="white"
                 className="p-1 font-medium"
             >
-                <a href="#About" className="flex items-center hover:text-txtDarkColor transition-colors">
+                <a href="#About" className="flex items-center hover:text-txtDarkColor transition ease-in-out delay-100 hover:-translate-y-0.1 hover:scale-125 duration-300 ...">
                     About
                 </a>
             </Typography>
             <Typography
                 as="li"
-                variant="small"
+                variant="medium"
                 color="white"
                 className="p-1 font-medium"
             >
-                <a href="#Services" className="flex items-center hover:text-txtDarkColor transition-colors">
+                <a href="#Services" className="flex items-center hover:text-txtDarkColor transition ease-in-out delay-100 hover:-translate-y-0.1 hover:scale-125 duration-300 ...">
                     Services
                 </a>
             </Typography>
             <Typography
                 as="li"
-                variant="small"
+                variant="medium"
                 color="white"
                 className="p-1 font-medium"
             >
-                <a href="#Contact" className="flex items-center hover:text-txtDarkColor transition-colors">
+                <a href="#Contact" className="flex items-center hover:text-txtDarkColor transition ease-in-out delay-100 hover:-translate-y-0.1 hover:scale-125 duration-300 ...">
                     Contact
                 </a>
             </Typography>
@@ -75,7 +77,7 @@ const Header = () => {
 
     const handleScroll = () => {
         const isScrolled = window.scrollY > 0;
-        setNavbarBackground(isScrolled ? "bg-primaryGradient" : ""); // Set navbar background to primaryGradient if scrolled, otherwise reset it
+        setNavbarBackground(isScrolled ? "bg-primaryGradient bg-opacity-50 backdrop-blur-lg" : ""); // Set navbar background to primaryGradient if scrolled, otherwise reset it
     };
 
     useEffect(() => {
@@ -86,9 +88,9 @@ const Header = () => {
     }, []);
 
     return (
-        <nav className={`z-50 fixed mx-auto w-screen px-8 sm:px-12 md:px-28 py-6 ${navbarBackground}`}>
-            <div className="flex items-center justify-between text-blue-gray-900">
-                <div>
+        <nav id="navbar" className={`z-50 fixed   ${navbarBackground}`}>
+            <div className="text-blue-gray-900" id="navbar-content">
+                <div className="Image-Container-Header">
                     <a href="">
                         <img src={EutactLogo} className="w-28" alt="" />
                     </a>
@@ -116,6 +118,7 @@ const Header = () => {
             <Collapse open={openNav}>
                 <NavList />
             </Collapse>
+
         </nav>
     );
 }
