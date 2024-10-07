@@ -107,3 +107,9 @@ html {
     }
 
 }
+
+/* Contact styling */
+.calendly-inline-widget{
+    min-width:562px;
+    height:350px;
+}

@@ -36,8 +36,8 @@ const Home = () => {
                         <img src={HomeLeft} className="w-full sm:w-80 md:w-full" alt="" />
                         <h6 id="home-heading" className="text-lg sm:text-md lg:text-2xl text-white mt-2">WITH US</h6>
                         <div className="flex flex-col sm:flex-row mt-4 sm:mt-6 gap-4">
-                            <Button variant="filled" color="white" className="w-full py-5 px-7 sm:w-auto text-md sm:text-md">Let's Talk</Button>
-                            <Button variant="outlined" color="white" className="w-full py-5 px-7 sm:w-auto text-md sm:text-md">Project Request</Button>
+                        <a href="#Contact" className="">
+                                    <Button variant="filled" color="white"className="w-full py-5 px-7 sm:w-auto text-md sm:text-md">Let's Talk</Button></a>
                         </div>
                     </TransitionRight>
                 </div>
