@@ -4,15 +4,17 @@
 
 
 html {
-    overflow-x: hidden;
+    overflow-x: hidden !important;
     scroll-behavior: smooth;
     font-family: "Lato", sans-serif;
 
 }
-*{
+
+* {
     font-family: "Lato", sans-serif;
 
 }
+
 /**************Custom Scroll bar**************/
 
 ::-webkit-scrollbar {
@@ -42,66 +44,70 @@ html {
 }
 
 #About {
- padding-top: 10px;
+    padding-top: 10px;
 }
-.Image-Container-Header{
+
+.Image-Container-Header {
     top: 0;
     margin: 0;
     padding: 10px;
 }
+
 /* Header styling */
 #navbar {
-    position: fixed; 
+    position: fixed;
     font-family: "Lato", sans-serif;
-    z-index: 50; 
-    width: 100%; 
+    z-index: 50;
+    width: 100%;
     backdrop-filter: blur(10px);
 }
-#list-nav{
+
+#list-nav {
     padding: 20px 50px;
 }
 
 #navbar-content {
     display: flex;
     padding: 10px 100px;
-    justify-content: space-between; 
+    justify-content: space-between;
     width: 100%;
 }
+
 /* Home styling */
 .img-container-home,
 .img-cont-home {
-    position: relative; 
+    position: relative;
 }
 
 .img-home-left,
 .img-home-right {
-    position: absolute; 
+    position: absolute;
     height: 70rem;
     transition: all 0.3s ease;
 }
 
 
 .img-home-left {
-    top: -10vh; 
-    left: -75vh; 
+    top: -10vh;
+    left: -75vh;
 }
 
 .img-home-right {
-    top: -10vh; 
-    right: -75vh; 
+    top: -10vh;
+    right: -75vh;
 }
 
 
 @media (max-width: 640px) {
     .img-home-left {
-        height: 30rem; 
-        top: -20vh; 
-        left: -50vw; 
+        height: 30rem;
+        top: -20vh;
+        left: -50vw;
     }
-    
-    .img-home-right{
-        height: 14rem; 
-        top: 42vh; 
+
+    .img-home-right {
+        height: 14rem;
+        top: 42vh;
         z-index: 1;
         right: -6vw;
     }
@@ -111,18 +117,18 @@ html {
 
 @media (max-width: 400px) {
     .img-home-left {
-        height: 30rem; 
-        top: -40vh; 
-        left: -50vw; 
+        height: 30rem;
+        top: -40vh;
+        left: -50vw;
     }
-    
-    .img-home-right{
-        height: 10rem; 
-        top: 79vh; 
+
+    .img-home-right {
+        height: 10rem;
+        top: 79vh;
         right: 28vw;
     }
 
-    #home-img{
+    #home-img {
         padding-bottom: 10px;
         width: 100px;
     }

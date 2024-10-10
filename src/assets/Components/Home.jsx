@@ -13,24 +13,25 @@ const Home = () => {
     return (
         <section id="Home">
             <div>
-            {/* Ellipses for background decorations */}
-            <motion.div
-                variants={fadeIn('right', 0.5)}
-                initial='hidden'
-                whileInView={"show"}
-                viewport={{ once: false, amount: 0.05 }}
-                className="img-container-home">
-                <img className="img-home-left" src={Ellipse} alt="Decorative Ellipse" />
-            </motion.div>
-            <motion.div
-                variants={fadeIn('left', 0.5)}
-                initial='hidden'
-                whileInView={"show"}
-                viewport={{ once: false, amount: 0.05 }}
-                className="img-cont-home">
-                <img className="img-home-right" src={Ellipse} alt="Decorative Ellipse" />
-            </motion.div>
+                {/* Ellipses for background decorations */}
+                <motion.div
+                    variants={fadeIn('right', 0.5)}
+                    initial="hidden"
+                    whileInView={"show"}
+                    viewport={{ once: false, amount: 0.05 }}
+                    className="img-container-home">
+                    <img className="img-home-left" src={Ellipse} alt="Decorative Ellipse" />
+                </motion.div>
+                <motion.div
+                    variants={fadeIn('left', 0.5)}
+                    initial="hidden"
+                    whileInView={"show"}
+                    viewport={{ once: false, amount: 0.05 }}
+                    className="img-cont-home">
+                    <img className="img-home-right" src={Ellipse} alt="Decorative Ellipse" />
+                </motion.div>
             </div>
+
             {/* Main section with flex layout */}
             <div className="flex flex-col sm:flex-row justify-around items-center pt-24 lg:py-0 h-[100vh] bg-gradient-to-br from-primaryGradient to-secondaryGradient">
 
@@ -52,8 +53,7 @@ const Home = () => {
                         <div className="flex flex-col sm:flex-row mt-4 sm:mt-6 gap-4">
                             {/* Button container */}
                             <div className="relative inline-flex group w-full sm:w-auto">
-                                <div className="absolute transition-all opacity-70 -inset-px rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:bg-gradient-to-r from-[#FFA500] via-[#be7b00] to-[#fff540] duration-300 animate-tilt overflow-hidden">
-                                </div>
+                                <div className="absolute transition-all opacity-70 -inset-px rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:bg-gradient-to-r from-[#FFA500] via-[#be7b00] to-[#fff540] duration-300 animate-tilt overflow-hidden"></div>
                                 <a href="#Contact" title="Let's Connect"
                                     className="relative inline-flex items-center justify-center w-full sm:w-auto px-10 py-4 text-lg font-bold text-black transition-all duration-200 bg-white font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
                                     role="button">
@@ -73,13 +73,14 @@ const Home = () => {
                 {/* Right image section */}
                 <div className="z-10 mt-6 sm:mt-0" id="home-img">
                     <TransitionLeft>
-                        <img src={HomeImg} alt="home-image" className="w-40 sm:w-60 lg:w-[40rem]"  />
+                        <img src={HomeImg} alt="home-image" className="w-40 sm:w-60 lg:w-[40rem]" />
                     </TransitionLeft>
                 </div>
             </div>
 
             <div className="mt-10"></div>
         </section>
+
     );
 }
 

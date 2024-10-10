@@ -88,24 +88,28 @@ const Header = () => {
     }, []);
 
     return (
-        <nav id="navbar" className={`z-50 fixed   ${navbarBackground}`}>
-            <div className="text-blue-gray-900" id="navbar-content">
+        <nav id="navbar" className={`z-50 fixed w-full ${navbarBackground}`}>
+            <div className="flex items-center justify-between px-4 py-2 w-full">
+                {/* Logo Section */}
                 <div className="Image-Container-Header">
-                    <a href="">
-                        <img src={EutactLogo} className="w-28" alt="" />
+                    <a href="/">
+                        <img src={EutactLogo} className="w-20 md:w-28" alt="Eutact Logo" />
                     </a>
                 </div>
 
+                {/* NavList for larger screens */}
                 <div className="hidden lg:block">
                     <NavList />
                 </div>
+
+                {/* Hamburger Menu Icon for smaller screens */}
                 <IconButton
                     variant="text"
                     className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
                     ripple={false}
                     onClick={() => {
                         setOpenNav(!openNav);
-                        setNavbarBackground(openNav ? "" : 'bg-primaryGradient');
+                        setNavbarBackground(openNav ? "" : "bg-primaryGradient");
                     }}
                 >
                     {openNav ? (
@@ -115,11 +119,16 @@ const Header = () => {
                     )}
                 </IconButton>
             </div>
-            <Collapse open={openNav}>
-                <NavList />
-            </Collapse>
 
+            {/* Collapsible NavList for smaller screens */}
+            <Collapse open={openNav}>
+                <div className="block lg:hidden">
+                    <NavList />
+                </div>
+            </Collapse>
         </nav>
+
+
     );
 }
 
