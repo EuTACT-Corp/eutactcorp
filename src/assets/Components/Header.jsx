@@ -66,7 +66,7 @@ const Header = () => {
 
     return (
         <nav className={`z-50 fixed w-full ${navbarBackground}`}>
-            <div className="flex items-center justify-between px-4 py-2 w-full">
+            <div className="flex items-center justify-between px-6 py-2 sm:px-10 sm:py-3 md:px-20 md:py-4 w-full">
                 {/* Logo Section */}
                 <div>
                     <a href="/">
