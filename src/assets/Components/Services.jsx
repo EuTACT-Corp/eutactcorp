@@ -7,9 +7,6 @@ import StrucSVG from "../Images/6_structural.svg";
 import DigitalSVG from "../Images/1_web_service.svg"
 import IdeaSVG from "../Images/2_web_service.svg"
 import FootprintSVG from "../Images/3_web_service.svg"
-
-import { motion } from 'framer-motion';
-import { fadeIn } from '../Animations/FadeIn.js'
 import TransitionComponent from "../Animations/TransitionUp.jsx";
 import TransitionRight from "../Animations/TransitionRight.jsx";
 import TransitionLeft from "../Animations/TransitionLeft.jsx";

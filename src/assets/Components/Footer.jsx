@@ -1,7 +1,7 @@
 import InstagramPNG from "../Images/Instagram.png"
 import TwitterPNG from "../Images/Twitter.png"
 import FacebookPNG from "../Images/Facebook.png"
-import YoutubePNG from "../Images/Youtube.png"
+import LinkedInPNG from "../Images/LinkedIn.png"
 import EutactLogo from "../Images/eutactlogo.png"
 import { IoLocationSharp } from "react-icons/io5";
 import TransitionComponent from "../Animations/TransitionUp"
@@ -24,12 +24,12 @@ const Footer = () => {
                         <h1 className="text-white text-3xl font-semibold">Follow Us!</h1>
                         <ul className="flex gap-5 p-4">
                             <li>
-                                <a href="#" target="_blank">
+                                <a href="https://www.instagram.com/eutactcorp/" target="_blank">
                                     <img src={InstagramPNG} className="w-10" alt="Instagram Logo" />
                                 </a>
                             </li>
                             <li>
-                                <a href="#" target="_blank">
+                                <a href="https://x.com/eutact" target="_blank">
                                     <img src={TwitterPNG} className="w-10" alt="Twitter Logo" />
                                 </a>
                             </li>
@@ -40,7 +40,7 @@ const Footer = () => {
                             </li>
                             <li>
                                 <a href="#" target="_blank">
-                                    <img src={YoutubePNG} className="w-10" alt="Youtube Logo" />
+                                    <img src={LinkedInPNG} className="w-10" alt="LinkedIn Logo" />
                                 </a>
                             </li>
                         </ul>
@@ -48,7 +48,7 @@ const Footer = () => {
                     <div className="text-right md:w-1/4 mx-auto md:mx-0">
                         <h1 className="text-white text-3xl font-semibold pb-3">Our Office</h1>
                         <div className="flex justify-center items-center md:justify-end md:items-end flex-col gap-2">
-                            <a href="#services" className="text-white">
+                            <a href="#Contact" className="text-white">
                                 <div className="flex justify-center items-center gap-1">
                                     <IoLocationSharp /> Edmonton
                                 </div>
