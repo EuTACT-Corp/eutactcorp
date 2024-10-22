@@ -1,15 +1,12 @@
 import React from "react";
 import { Collapse, Typography, IconButton } from "@material-tailwind/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-
 import EutactLogo from "../Images/eutactlogo.png";
-
 import { useEffect, useState } from "react";
-import { motion } from "framer-motion";
 
 function NavList({ onClick }) {
     return (
-        <ul className="my-2 flex flex-col justify-end items-end gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-10">
+        <ul className="my-2 flex flex-col justify-end items-end gap-4 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-8">
             {["Home", "About", "Services", "Contact"].map((item) => (
                 <Typography
                     key={item}
@@ -20,7 +17,7 @@ function NavList({ onClick }) {
                 >
                     <a
                         href={`#${item}`}
-                        className="flex items-center transition-transform ease-in-out delay-100 lg:hover:scale-105 lg:duration-300" // Animation only for lg and above
+                        className="flex items-center transition-transform ease-in-out delay-100 lg:hover:scale-105 lg:duration-300"
                         onClick={onClick} // Close the menu when a link is clicked on mobile
                     >
                         {item}
@@ -65,8 +62,8 @@ const Header = () => {
     }, []);
 
     return (
-        <nav className={`z-50 fixed w-full ${navbarBackground}`}>
-            <div className="flex items-center justify-between px-6 py-2 sm:px-10 sm:py-3 md:px-20 md:py-4 w-full">
+        <nav className={`z-50 fixed w-full ${navbarBackground} transition-all duration-300 ease-in-out`}>
+            <div className="flex items-center justify-between px-6 py-3 sm:px-10 sm:py-4 md:px-20 w-full">
                 {/* Logo Section */}
                 <div>
                     <a href="/">
@@ -95,8 +92,8 @@ const Header = () => {
             </div>
 
             {/* Collapsible NavList for smaller screens */}
-            <Collapse open={openNav}>
-                <div className="block lg:hidden">
+            <Collapse open={openNav} className="lg:hidden">
+                <div className="block bg-primaryGradient px-5">
                     <NavList onClick={() => setOpenNav(false)} />
                 </div>
             </Collapse>
