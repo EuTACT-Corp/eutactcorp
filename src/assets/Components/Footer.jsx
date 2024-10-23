@@ -5,6 +5,7 @@ import LinkedInPNG from "../Images/LinkedIn.png"
 import EutactLogo from "../Images/eutactlogo.png"
 import { IoLocationSharp } from "react-icons/io5";
 import TransitionComponent from "../Animations/TransitionUp"
+import { Link } from "react-router-dom"
 
 const Footer = () => {
     return (
@@ -76,7 +77,7 @@ const Footer = () => {
                 <div className="flex flex-col md:flex-row justify-between items-center gap-10 md:gap-0">
                     <div className="flex gap-5">
                         <a href="#" target="_blank" className="text-white underline">Terms & Conditions</a>
-                        <a href="#" target="_blank" className="text-white underline">Privacy & Policy</a>
+                        <p className="text-white underline"><Link to="/privacy-policy" className="underline">Privacy Policy</Link></p>
                     </div>
                     <div className="text-white">
                         <p>Copyright 2024 | All Rights Reserved</p>
